@@ -28,6 +28,10 @@ def calculate_distance(rA, rB):
     0.1
     """
     # This function calculates the distance between two points given as numpy arrays.
+    
+    if not isinstance(rA, np.ndarray) or not isinstance(rB, np.ndarray):
+        raise TypeError("Input must be type np.ndarray for calculate_distance!")
+
     distance_vector = (rA - rB)
     distance_scalar = np.linalg.norm(distance_vector)
     return distance_scalar
