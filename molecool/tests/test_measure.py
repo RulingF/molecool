@@ -15,7 +15,8 @@ def test_calculate_center_of_mass():
 
     expected_center = np.array([1,1,1])
 
-    assert center_of_mass.all() == expected_center.all()
+#    assert center_of_mass.all() == expected_center.all()
+    assert np.allclose(center_of_mass,expected_center)
 
 #def test_calculate_molecular_mass(test_molecule):
 def test_calculate_molecular_mass():

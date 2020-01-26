@@ -55,11 +55,11 @@ def calculate_center_of_mass(symbols, coordinates):
     
     """
 
-    sum_of_mass_times_coordinates = np.array([0,0,0])
+    sum_of_mass_times_coordinates = np.array([0.,0.,0.])
     sum_of_mass = calculate_molecular_mass(symbols)
 
     for atom_name, atom_coordinate in zip(symbols,coordinates):
-        sum_of_mass_times_coordinates = atomic_weights[atom_name] * atom_coordinate
+        sum_of_mass_times_coordinates += atomic_weights[atom_name] * atom_coordinate
     center_of_mass = sum_of_mass_times_coordinates / sum_of_mass
         
     return center_of_mass
