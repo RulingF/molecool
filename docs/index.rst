@@ -6,13 +6,16 @@
 Welcome to molecool's documentation!
 =========================================================
 
+Rulin Feng mark, molecool is a Python package
+the file format 'xyz' and 'pdb' are currently supported.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    getting_started
    api
-
+   about
 
 
 Indices and tables
