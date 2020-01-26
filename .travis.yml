@@ -45,7 +45,8 @@ script:
   - pytest -v --cov=molecool molecool/tests/
 
 notifications:
-    email: false
+     email: false
+    # email: student.frel@gmail.com 
 
 after_success:
   - codecov
