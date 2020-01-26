@@ -1,7 +1,7 @@
 """
 atom_data.py
 
-Dics that keep atom data.
+Dicts that keep atom data.
 """
 
 
